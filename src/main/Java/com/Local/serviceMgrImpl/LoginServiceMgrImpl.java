@@ -1,12 +1,12 @@
 package com.Local.serviceMgrImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import com.Local.Dao.LoginDao;
 import com.Local.ServiceMgr.LoginServiceMgr;
 
-@Service
+@Component
 public class LoginServiceMgrImpl implements LoginServiceMgr {
 	
 	@Autowired
