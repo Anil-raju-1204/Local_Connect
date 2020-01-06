@@ -7,6 +7,7 @@ import com.Local.Dao.LoginDao;
 import com.Local.ServiceMgr.LoginServiceMgr;
 import com.Localconnect.Bean.LoginRequestBean;
 import com.Localconnect.Bean.ResponseBean;
+import com.Localconnect.Bean.SignUpRequestBean;
 
 @Component
 public class LoginServiceMgrImpl implements LoginServiceMgr {
@@ -18,6 +19,12 @@ public class LoginServiceMgrImpl implements LoginServiceMgr {
 	public ResponseBean login(LoginRequestBean loginRequestBean) {
 		
 		return loginDao.login(loginRequestBean);
+	}
+
+	@Override
+	public ResponseBean signUp(SignUpRequestBean signUpRequest) {
+		
+		return loginDao.signUp(signUpRequest);
 	}
 	
 	

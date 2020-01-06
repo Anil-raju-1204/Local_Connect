@@ -6,9 +6,11 @@ public class LoginRequestBean implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
+	
 	private String mobileno;
 	private String password;
 	
+	static long ttlMillis;
 	
 	public String getMobileno() {
 		return mobileno;

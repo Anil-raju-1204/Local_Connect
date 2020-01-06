@@ -14,6 +14,8 @@ public class ResponseBean implements Serializable{
 	private Integer count;
 	private Boolean isValid;
 	private String message;
+	private String jwtToken;
+	
 	
 	private List<UserInfoResponse> userinfo;
 	
@@ -45,6 +47,12 @@ public class ResponseBean implements Serializable{
 	}
 	public void setUserinfo(List<UserInfoResponse> userinfo) {
 		this.userinfo = userinfo;
+	}
+	public String getJwtToken() {
+		return jwtToken;
+	}
+	public void setJwtToken(String jwtToken) {
+		this.jwtToken = jwtToken;
 	}
 	
 	

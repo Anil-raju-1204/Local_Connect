@@ -15,7 +15,6 @@ public class LoginUserMapper implements RowMapper<UserInfoResponse>{
 		
 		user.setUserName(rs.getString("u.user_name"));
 		user.setUserMobileNo(rs.getString("u.user_mobile_number"));
-		user.setUserType(rs.getString("ut.ut_user_name "));
 		
 		return user;
 	}
